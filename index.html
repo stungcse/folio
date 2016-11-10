@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mino2016</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+    <link href="css/folio2016.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/hover.css"> </head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="home-container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="home-card hidden">
+                                <div class="home-card-top"> </div>
+                                <div class="home-card-bottom">
+                                    <div class="home-card-circle"> </div>
+                                    <p class="home-card-title tlt" data-in-effect="fadeInDown"> Son Tung Pham </p>
+                                    <p class="home-card-subtitle tlt" data-in-effect="fadeInUp"> UI / UX Designer </p>
+                                    <div class="height24"></div> <a class="btn-folio btn-connect hvr-rectangle-out"> Connect me </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-xs-4 border-top-left"> <span class="home-title1 tlt" data-in-effect="fadeInDown" id="changerificwordspanid1"> P </span></div>
+                                <div class="col-xs-4 border-top"> <span class="home-title1 tlt" data-in-effect="fadeInDown" id="changerificwordspanid2"> O </span></div>
+                                <div class="col-xs-4 border-top-right"> <span class="home-title1 tlt" data-in-effect="fadeInDown" id="changerificwordspanid3"> R </span></div>
+                                <div class="col-xs-4 border-top-left"> <span class="home-title1 tlt" data-in-effect="fadeInLeft" id="changerificwordspanid4"> T </span></div>
+                                <div class="col-xs-4 border-top"> <span class="home-title1" style="height:77px;"> <img src="img/moon.png" alt="moon" width="18" style="margin-top:30px;" id="moon" class="hidden">  </span></div>
+                                <div class="col-xs-4 border-top-right"> <span class="home-title2 tlt" data-in-effect="fadeInRight"> F </span></div>
+                                <div class="col-xs-4 border-top-left"> <span class="home-title2 tlt" data-in-effect="fadeInUp"> O </span></div>
+                                <div class="col-xs-4 border-top"> <span class="home-title2 tlt" data-in-effect="fadeInUp"> L </span></div>
+                                <div class="col-xs-4 border-top-right"> <span class="home-title2 tlt" data-in-effect="fadeInUp"> I </span></div>
+                                <div class="col-xs-4 border-bot-left"> <span class="home-title2 tlt" data-in-effect="fadeInRight"> O </span></div>
+                                <div class="col-xs-4 border-bot-left"> <span class="home-title2 tlt" data-in-effect="fadeInRight"> O </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('div.hidden').fadeIn(1300).removeClass('hidden');
+            $('#moon').fadeIn(1300).removeClass('hidden');
+            $('.tlt').textillate({
+                minDisplayTime: 1000
+                , in : {
+                    sync: true
+                    , delay: 1200
+                , }
+            });
+            var word1 = ['2', 'P'];
+            var word2 = ['0', 'O'];
+            var word3 = ['1', 'R'];
+            var word4 = ['6', 'T'];
+            var i1 = 1;
+            var i2 = 1;
+            var i3 = 1;
+            var i4 = 1;
+            setInterval(function () {
+                $('#changerificwordspanid1').fadeOut(function () {
+                    $(this).html(word1[i1 = (i1 + 1) % word1.length]).fadeIn();
+                });
+                $('#changerificwordspanid2').fadeOut(function () {
+                    $(this).html(word2[i2 = (i2 + 1) % word2.length]).fadeIn();
+                });
+                $('#changerificwordspanid3').fadeOut(function () {
+                    $(this).html(word3[i3 = (i3 + 1) % word3.length]).fadeIn();
+                });
+                $('#changerificwordspanid4').fadeOut(function () {
+                    $(this).html(word4[i4 = (i4 + 1) % word4.length]).fadeIn();
+                });
+            }, 3200);
+        });
+        
+        
+         $(window).ready(centerDiv);
+        $(window).resize(centerDiv);
+
+        function centerDiv() {
+            var winHeight = $(window).innerHeight()
+                , divHeight = $('.container').height();
+            if (winHeight - divHeight > 0) {
+                $('.container').css('marginTop', (winHeight - divHeight) / 2);
+            }
+            else {
+                $('.container').css('marginTop', 0);
+            }
+        }
+        
+        
+    </script>
+</body>
+
+</html>

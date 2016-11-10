@@ -1,0 +1,156 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background:url('../img/bg.jpg') no-repeat center center fixed;     
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    min-width:320px;
+    
+}
+
+.grey-bg {background-color: #f5f6f7 !important;}
+
+@media (min-width:768px) {
+    .home-container {
+        padding-left: 10%;
+        padding-right: 10%;
+        background: transparent;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .container {width:992px}
+}
+
+.home-card {
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.32);
+    width: 300px;
+    height: 480px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    background: #fff;
+    margin:0 auto;
+}
+
+.home-card:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.54);
+}
+
+.home-card-top {
+    background: #002c41 url('../img/top-card.png') no-repeat top center;
+    background-size: cover;
+    height: 200px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.home-card-circle {
+    background: #002c41 url('../img/mino.png') no-repeat center center;
+    background-size: 64px;
+    width: 120px;
+    height: 120px;
+    border-radius: 140px;
+    border: 4px solid #fff;
+    position: relative;
+    top: -65px;
+    margin: 0 auto;
+}
+
+.home-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #002c41;
+    margin-top: -32px;
+    font-family: 'Raleway';
+    width: 100%;
+}
+
+.home-card-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #bababa;
+    margin-top: -8px;
+    text-align: center;
+    font-family: 'Raleway';
+    width: 100%;
+}
+
+.height24 {
+    height: 24px;
+    clear: both;
+}
+
+.btn-folio {
+    display: block !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    min-height: 1px;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+    width: 150px;
+    border-radius: 23px !important;
+    cursor: pointer;
+    transition: all 0.3s ease1
+}
+
+.btn-folio:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-connect {
+    background-color: #ff414f !important;
+    margin-top: 24px;
+    -webkit-animation-name: Pulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes Pulse {
+  from { background-color: #ff414f; -webkit-box-shadow: 0 0 4px #ff414f; }
+  50% { background-color: #d83d50; -webkit-box-shadow: 0 0 12px #d83d50; }
+  to { background-color: #c13a4b; -webkit-box-shadow: 0 0 4px #ff414f; }
+}
+
+
+
+div.hidden {
+    display: none
+}
+
+.home-title1 {
+    font-size:54px;
+    color:#8095a0;
+    font-weight:700;
+    text-align: center;
+    display: block;
+    
+}
+.home-title2 {
+    font-size:54px;
+    color:#002c41;
+    font-weight:700;
+    text-align: center; 
+    display: block;
+    
+}
+
+.border-top-left {border-left:none;border-top:none;border-right:1px solid #f2f2f2;border-bottom: 1px solid #f2f2f2;}
+.border-top {border-left:none;border-top:none;border-right:none;border-bottom: 1px solid #f2f2f2;}
+.border-top-right {border-right:none;border-top:none;border-left:1px solid #f2f2f2;border-bottom: 1px solid #f2f2f2;}
+
+
+
+.border-bot-left {border-left:none;border-top:none;border-right:1px solid #f2f2f2;border-bottom: none;}
