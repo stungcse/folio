@@ -119,9 +119,9 @@ body {
 }
 
 @-webkit-keyframes Pulse {
-  from { background-color: #ff414f; -webkit-box-shadow: 0 0 4px #ff414f; }
-  50% { background-color: #d83d50; -webkit-box-shadow: 0 0 12px #d83d50; }
-  to { background-color: #c13a4b; -webkit-box-shadow: 0 0 4px #ff414f; }
+  from { -webkit-box-shadow: 0 0 4px #ff414f; }
+  50% { -webkit-box-shadow: 0 0 12px #d83d50; }
+  to {  -webkit-box-shadow: 0 0 4px #ff414f; }
 }
 
 
