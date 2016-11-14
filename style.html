@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>My Style</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+    <link href="css/folio2016.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/hover.css"> </head>
+<link rel="stylesheet" href="css/font-awesome.min.css"> </head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="style-card profile-card-padding hidden text-center footer-img1 ">
+                    <p class="text-center style-big-title tlt" data-in-effect="fadeInDown"> Hey, which <span style="color:orange;font-family:'Verdana';">STYLE</span> would you like to see? </p>
+                    <div class="height24"></div>
+                    <div class="light-line"> </div>
+                    <div class="height48"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4 text-center style-type ">
+                            <p>
+                                <a href="#"> <span class="style-icon style-icon1 glyphicon glyphicon-grain" aria-hidden="true"></span><span class="style-sub-title">  Nature  </span> </a>
+                            </p>
+                            <p class="text-justify padding-5 tlt" data-in-effect="fadeInUp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <div class="height12"></div>
+                            <p class="text-center"> <a class="btn-folio btn-continue hvr-rectangle-out"> Select</a> </p>
+                            <div class="height24"></div>
+                        </div>
+                        <div class="col-xs-12  col-md-4  text-center  style-type">
+                            <p>
+                                <a href="#"> <span class="style-icon  style-icon2 glyphicon glyphicon-fire" aria-hidden="true"></span> <span class="style-sub-title">  Fire  </span> </a>
+                            </p>
+                            <p class="text-justify padding-5 tlt" data-in-effect="fadeInUp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <div class="height12"></div>
+                            <p class="text-center"> <a class="btn-folio btn-continue hvr-rectangle-out"> Select</a> </p>
+                            <div class="height24"></div>
+                        </div>
+                        <div class="col-xs-12  col-md-4 text-center  style-type">
+                            <p>
+                                <a href="#"> <span class="style-icon  style-icon3  glyphicon glyphicon-tint" aria-hidden="true"></span> <span class="style-sub-title">  Water  </span> </a>
+                            </p>
+                            <p class="text-justify padding-5 tlt" data-in-effect="fadeInUp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <div class="height12"></div>
+                            <p class="text-center"> <a class="btn-folio btn-continue hvr-rectangle-out"> Select</a> </p>
+                            <div class="height24"></div>
+                        </div>
+                         
+                        <div class="height48"></div>
+                                            <div class="footerIMG"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('div.hidden').fadeIn(1000).removeClass('hidden');
+            $('span.hidden').fadeIn(1300).removeClass('hidden');
+            $('.tlt').textillate({
+                minDisplayTime: 700
+                , in : {
+                    sync: true
+                    , delay: 500
+                , }
+            });
+        });
+        $(window).ready(centerDiv);
+        $(window).resize(centerDiv);
+
+        function centerDiv() {
+            var winHeight = $(window).innerHeight()
+                , divHeight = $('.container').height();
+            if (winHeight - divHeight > 0) {
+                $('.container').css('marginTop', (winHeight - divHeight) / 2);
+            }
+            else {
+                $('.container').css('marginTop', 0);
+            }
+        }
+    </script>
+</body>
+
+</html>
