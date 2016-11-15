@@ -139,6 +139,11 @@
     <script src="js/jquery.textillate.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script>
+         $(document).ready(function () {
+            $('div.hidden').fadeIn(1000).removeClass('hidden');
+            $('span.hidden').fadeIn(1300).removeClass('hidden');
+          
+        });
         $(window).ready(centerDiv);
         $(window).resize(centerDiv);
 
@@ -152,13 +157,8 @@
                 $('.container').css('marginTop', 0);
             }
         }
-        $(document).ready(function () {
-            $('.grid').masonry({
-                itemSelector: '.grid-item'
-                , gutter: 24
-                , percentPosition: true
-            });
-        });
+         
+       
     </script>
 </body>
 

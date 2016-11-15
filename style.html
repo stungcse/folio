@@ -17,45 +17,51 @@
 
 <body>
     <div class="container">
+       <!-- <div class="row">
+            <div class="col-sm-12">
+                <a href="index.html" class="mino"></a>
+                
+            </div>
+        </div>
+        <div class="height48"></div>-->
         <div class="row">
             <div class="col-sm-12">
                 <div class="style-card profile-card-padding hidden text-center footer-img1 ">
-                    <p class="text-center style-big-title tlt" data-in-effect="fadeInDown"> Hey, which <span style="color:orange;font-family:'Verdana';">STYLE</span> would you like to see? </p>
+                    <p class="text-center style-big-title animated fadeInDown" > Hey, which <span style="color:#f8ba83;font-family:'Verdana';" class="style-pulse">STYLE</span> would you like to see? </p>
                     <div class="height24"></div>
                     <div class="light-line"> </div>
                     <div class="height48"></div>
                     <div class="row">
                         <div class="col-xs-12 col-md-4 text-center style-type ">
                             <p>
-                                <a href="#"> <span class="style-icon style-icon1 glyphicon glyphicon-grain" aria-hidden="true"></span><span class="style-sub-title">  Nature  </span> </a>
+                                <a href="#"> <span class="style-icon style-icon1 glyphicon glyphicon-grain animated zoomIn" aria-hidden="true"></span><span class="style-sub-title">  Nature  </span> </a>
                             </p>
-                            <p class="text-justify padding-5 tlt" data-in-effect="fadeInUp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p class="text-justify padding-5 animated fadeInUp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             <div class="height12"></div>
-                            <p class="text-center"> <a class="btn-folio btn-continue hvr-rectangle-out"> Select</a> </p>
+                            <p class="text-center"> <a href="profile.html" class="btn-folio btn-continue hvr-rectangle-out animated fadeInUp" > Select</a> </p>
                             <div class="height24"></div>
                         </div>
                         <div class="col-xs-12  col-md-4  text-center  style-type">
                             <p>
-                                <a href="#"> <span class="style-icon  style-icon2 glyphicon glyphicon-fire" aria-hidden="true"></span> <span class="style-sub-title">  Fire  </span> </a>
+                                <a href="#"> <span class="style-icon  style-icon2 glyphicon glyphicon-fire animated zoomIn" aria-hidden="true"></span> <span class="style-sub-title">  Fire  </span> </a>
                             </p>
-                            <p class="text-justify padding-5 tlt" data-in-effect="fadeInUp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p class="text-justify padding-5 animated fadeInUp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             <div class="height12"></div>
-                            <p class="text-center"> <a class="btn-folio btn-continue hvr-rectangle-out"> Select</a> </p>
+                            <p class="text-center"> <a class="btn-folio btn-continue hvr-rectangle-out animated fadeInUp"> Select</a> </p>
                             <div class="height24"></div>
                         </div>
                         <div class="col-xs-12  col-md-4 text-center  style-type">
                             <p>
-                                <a href="#"> <span class="style-icon  style-icon3  glyphicon glyphicon-tint" aria-hidden="true"></span> <span class="style-sub-title">  Water  </span> </a>
+                                <a href="#"> <span class="style-icon  style-icon3  glyphicon glyphicon-tint animated zoomIn" aria-hidden="true"></span> <span class="style-sub-title">  Water  </span> </a>
                             </p>
-                            <p class="text-justify padding-5 tlt" data-in-effect="fadeInUp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p class="text-justify padding-5 animated fadeInUp" > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             <div class="height12"></div>
-                            <p class="text-center"> <a class="btn-folio btn-continue hvr-rectangle-out"> Select</a> </p>
+                            <p class="text-center"> <a class="btn-folio btn-continue hvr-rectangle-out animated fadeInUp"> Select</a> </p>
                             <div class="height24"></div>
                         </div>
                          
                         <div class="height48"></div>
-                                            <div class="footerIMG"></div>
-
+                         <div class="height48"></div>
                     </div>
                 </div>
             </div>
@@ -69,13 +75,14 @@
         $(document).ready(function () {
             $('div.hidden').fadeIn(1000).removeClass('hidden');
             $('span.hidden').fadeIn(1300).removeClass('hidden');
-            $('.tlt').textillate({
+           /* $('.tlt').textillate({
                 minDisplayTime: 700
                 , in : {
                     sync: true
                     , delay: 500
                 , }
-            });
+            });*/
+            centerDiv();
         });
         $(window).ready(centerDiv);
         $(window).resize(centerDiv);
