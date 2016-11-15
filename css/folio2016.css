@@ -52,7 +52,7 @@ h3 {
     width: 300px;
     height: 480px;
     border-radius: 25px;
-    transition: all 0.5s ease;
+    transition: all 1.5s ease;
     background: #fff;
     margin: 0 auto;
 }
@@ -163,13 +163,13 @@ h3 {
 
 @-webkit-keyframes Pulse {
     from {
-        -webkit-box-shadow: 0 0 4px #ff414f;
+        -webkit-box-shadow: 0 0 6px #ff414f;
     }
     50% {
-        -webkit-box-shadow: 0 0 12px #d83d50;
+        -webkit-box-shadow: 0 0 20px #d83d50;
     }
     to {
-        -webkit-box-shadow: 0 0 4px #ff414f;
+        -webkit-box-shadow: 0 0 6px #ff414f;
     }
 }
 
@@ -316,12 +316,14 @@ div.hidden {
     font-weight: 600;
 }
 
+/* STYLE ------------------------------------------------------- */
+
 .style-card {
-    border-top: 3px solid #c9c361;
+    border-top: 3px solid #f9cca1;
     background: #fff;
-    border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
 }
 
 .footer-img1 {
@@ -388,6 +390,7 @@ div.hidden {
     color: #00aeef
 }
 
+/*
 .style-icon1:hover {
     color: #24c875 !important;
 }
@@ -399,9 +402,53 @@ div.hidden {
 .style-icon3:hover {
     color: #00aeef !important;
 }
+*/
 
-.style-type {background: transparent; transition: all 0.5s ease-in-out;border-radius: 20px; padding-top:24px;}
-.style-type:hover {background: #fff;opacity:0.9; }
+.style-type {
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+    padding-top: 24px;
+}
+
+.style-type:hover {
+    background: #fff;
+    opacity: 0.9;
+}
+
 .style-type a {
     text-decoration: none;
+}
+
+.style-pulse {        
+    animation: pulse3 5s infinite;
+    -moz-animation: pulse3 5s infinite;
+    border-radius: 32px;
+    
+}
+
+
+.mino {
+    display: block;
+    background: #002c41 url('../img/mino.png') no-repeat center center;
+    background-size: 54px;
+    width: 92px;
+    height: 92px;
+    border-radius: 92px;
+    border: 4px solid #fff;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+@keyframes pulse3 {
+    0% {
+        color:   #24c875 !important;
+    }
+    50% {
+         color:  #ff414f !important;
+    }
+    100% {
+         color:  #00aeef !important;
+    }
 }
