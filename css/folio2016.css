@@ -572,7 +572,7 @@ div.hidden {
     background: #34403c;
     height: 550px;
     padding: 16px;
-    background: #fff url('../img/timeline-bg.jpg') no-repeat right bottom;
+    background: #34403c url('../img/timeline-bg.jpg') no-repeat right bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
