@@ -765,6 +765,7 @@ div.hidden {
 .progress-bar
 {
     height: 10px;
+    border-radius:6px;
 }
 .progress-bar-success {
     background-color: #18a3b5 !important;
