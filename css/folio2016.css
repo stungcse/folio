@@ -541,9 +541,9 @@ div.hidden {
 .nature-connect-fb a:hover {
     display: inline-block;
     padding: 0 12px;
-    border-radius: 20px;
-    ;
-    background-color: #f5f6f7
+    border-radius: 20px;    
+    background-color: #8b9dc3;
+    color:#fff;
 }
 
 .nature-try-me {
@@ -771,5 +771,7 @@ div.hidden {
     background-color: #18a3b5 !important;
 }
 
-
+.nature-folio-item {
+    margin-bottom: 24px;
+}
 /*.border-leftright {border-left:1px solid #eaeaea;border-right:1px solid #eaeaea}*/
