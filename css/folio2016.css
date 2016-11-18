@@ -348,6 +348,13 @@ div.hidden {
     font-weight: 600;
 }
 
+.profile-title2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
 
 /* STYLE ------------------------------------------------------- */
 
@@ -478,9 +485,9 @@ div.hidden {
 .nature-container {
     padding: 0;
     background: #fff;
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.17);
-    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.17);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.22);
     border-radius: 15px;
 }
 
@@ -541,9 +548,9 @@ div.hidden {
 .nature-connect-fb a:hover {
     display: inline-block;
     padding: 0 12px;
-    border-radius: 20px;    
-    background-color: #8b9dc3;
-    color:#fff;
+    border-radius: 20px;
+    background-color: #3b5998;
+    color: #fff;
 }
 
 .nature-try-me {
@@ -757,21 +764,60 @@ div.hidden {
     color: #999;
 }
 
-.progress
-{
-    height:10px;
-    padding-left:0;
-}
-.progress-bar
-{
+.progress {
     height: 10px;
-    border-radius:6px;
+    padding-left: 0;
 }
+
+.progress-bar {
+    height: 10px;
+    border-radius: 6px;
+}
+
 .progress-bar-success {
     background-color: #18a3b5 !important;
 }
 
 .nature-folio-item {
     margin-bottom: 24px;
+    color:#fff !important;
+    font-weight: 600;
 }
-/*.border-leftright {border-left:1px solid #eaeaea;border-right:1px solid #eaeaea}*/
+
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    color: #18a3b5;
+    background-color: #fff;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 8px 18px;
+    border-radius: 20px !important;
+    color:#fff;
+}
+
+.nav > li > a:hover {    
+    color:#555;
+}
+.nav {text-align: center}
+.nav-pills>li {
+    float: none;
+    display: inline-block;
+    width: 100px;
+}
+
+.project-bg{
+     background: #fff url('../img/project-bg.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-left:-16px;
+    margin-right:-16px;
+    min-height: 650px;
+    
+}
