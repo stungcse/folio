@@ -486,7 +486,7 @@ div.hidden {
 }
 
 .nature-content {
-    padding: 16px;
+    padding: 16px 16px 0 16px;
 }
 
 .yellow-line {
@@ -834,4 +834,26 @@ div.hidden {
     -o-animation-duration: 2s;
     -o-animation-delay: 1.5s;
     -o-animation-iteration-count: 1;
+}
+.thankyou-container {
+    padding:32px;
+    
+    
+}
+
+.thankyou {
+    padding:16px;
+    /*border:2px solid #e5e5e5;*/
+    text-align: center;
+    color:#555;
+    
+    
+}
+
+.footer-img1 {
+    background: #fff url('../img/forest.png') no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
