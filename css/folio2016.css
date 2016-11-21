@@ -13,24 +13,32 @@ body {
     background-color: #f5f6f7 !important;
 }
 
-@media (min-width:992){
+@media (min-width: 1200px) {
     .container {
-        width: 992px
+        width: 992px !important;
     }
 }
-@media (min-width:767px) and (max-width:991px)
-{
+
+
+/*@media (min-width:992){
+    .container {
+        width: 992px !important;
+    }
+}*/
+
+@media (min-width:767px) and (max-width:991px) {
     .nature-timeline-line {
-    width: 3px;
-    height: 450px;
-    position: absolute;
-    left: 43px !important;
-    background: #e5e5e5;
-    opacity: 0.4;
-    z-index: 1;
-    border-radius: 10px;
+        width: 3px;
+        height: 450px;
+        position: absolute;
+        left: 43px !important;
+        background: #e5e5e5;
+        opacity: 0.4;
+        z-index: 1;
+        border-radius: 10px;
+    }
 }
-}
+
 @media (min-width:768px) {
     .home-container {
         padding-left: 10%;
@@ -40,7 +48,6 @@ body {
         width: 100%;
         height: 100%;
     }
-    
     .profile-container {
         padding-left: 10%;
         padding-right: 10%;
@@ -107,7 +114,7 @@ body {
         font-size: 12px !important;
         color: #fff
     }
-    .project-number{
+    .project-number {
         word-break: break-all;
     }
 }
@@ -900,16 +907,15 @@ div.hidden {
     background-size: cover;
 }
 
-.footer-img2{
+.footer-img2 {
     background: #fff url('../img/forest.png') no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-        border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-
 
 .thumbnail {
     max-width: 200px;
