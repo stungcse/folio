@@ -883,6 +883,17 @@ div.hidden {
     background-size: cover;
 }
 
+.footer-img2{
+    background: #fff url('../img/forest.png') no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 25px;
+}
+
+
 .thumbnail {
     max-width: 200px;
     margin: 0 auto;
