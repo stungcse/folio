@@ -695,7 +695,7 @@ div.hidden {
 .web-exp-container {
     display: block;
     margin: 0 auto;
-    padding: 16px 32px;
+    padding: 16px 0px;
 }
 
 .web-exp {
@@ -857,3 +857,5 @@ div.hidden {
     -o-background-size: cover;
     background-size: cover;
 }
+
+.thumbnail {max-width: 200px;margin:0 auto;margin-bottom: 12px;}
