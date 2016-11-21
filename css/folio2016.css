@@ -889,8 +889,8 @@ div.hidden {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-        border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 
