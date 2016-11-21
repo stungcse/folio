@@ -55,21 +55,16 @@ body {
     }
     .nature-mino {
         display: block;
-        background: #417640 url('../img/mino.png') no-repeat center center;
-        background-size: 36px!important;
-        ;
+        background: transparent url('../img/alexa.png') no-repeat center center;
+        /*background-size: 36px!important;*/
         width: 72px !important;
-        ;
         height: 72px !important;
-        ;
         border-radius: 92px;
         border: 2px solid #fff;
         position: relative;
         margin: 0 auto !important;
         top: 125px !important;
-        ;
         left: 0 !important;
-        ;
     }
 }
 
@@ -355,7 +350,6 @@ div.hidden {
 }
 
 
-
 /* STYLE ------------------------------------------------------- */
 
 .style-card {
@@ -528,9 +522,10 @@ div.hidden {
 }
 
 .nature-mino {
+    /* #417460 */
     display: block;
-    background: #417640 url('../img/mino.png') no-repeat center center;
-    background-size: 54px;
+    background: transparent url('../img/alexa.png') no-repeat center center;
+    /*background-size: 54px;*/
     width: 96px;
     height: 96px;
     border-radius: 92px;
@@ -780,10 +775,9 @@ div.hidden {
 
 .nature-folio-item {
     margin-bottom: 24px;
-    color:#fff !important;
+    color: #fff !important;
     font-weight: 600;
 }
-
 
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus,
@@ -797,27 +791,47 @@ div.hidden {
     display: block;
     padding: 8px 18px;
     border-radius: 20px !important;
-    color:#fff;
+    color: #fff;
 }
 
-.nav > li > a:hover {    
-    color:#555;
+.nav > li > a:hover {
+    color: #555;
 }
-.nav {text-align: center}
+
+.nav {
+    text-align: center
+}
+
 .nav-pills>li {
     float: none;
     display: inline-block;
     width: 100px;
 }
 
-.project-bg{
-     background: #fff url('../img/project-bg.jpg') no-repeat center center;
+.project-bg {
+    background: #fff url('../img/project-bg.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin-left:-16px;
-    margin-right:-16px;
+    margin-left: -16px;
+    margin-right: -16px;
     min-height: 650px;
-    
+}
+
+#teamwork,
+#study,
+#ui,
+#ux,
+#problem,
+#color {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 1.5s;
+    -moz-animation-iteration-count: 1;
+    -o-animation-duration: 2s;
+    -o-animation-delay: 1.5s;
+    -o-animation-iteration-count: 1;
 }
